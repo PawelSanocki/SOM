@@ -1,6 +1,7 @@
-import numpy as np
-import cv2
-from scipy.io import loadmat
-a = dict()
-img = np.array(loadmat("C:\\Users\\sanoc\\OneDrive\\Pulpit\\Salinas.mat", mdict = a))
-print(a[0].shape)
+import tensorflow as tf
+
+print(tf.test.is_built_with_cuda())
+# return True
+print("---------------------------")
+print(tf.test.is_gpu_available(cuda_only=False, min_cuda_compute_capability=None))
+# return True
